@@ -16,24 +16,24 @@ const useStyles = makeStyles(theme => ({
   },
   shiftContent: {
     [theme.breakpoints.between('xs', 'sm')]: {
-      paddingLeft: 50,
-      paddingRight: 50
+      paddingLeft: 0,
+      paddingRight: 0
     },
     [theme.breakpoints.up('sm')]: {
-      paddingLeft: 120,
-      paddingRight: 120
+      paddingLeft: 0,
+      paddingRight: 0
     },
     [theme.breakpoints.only('md')]: {
-      paddingLeft: 180,
-      paddingRight: 180
+      paddingLeft: 0,
+      paddingRight: 0,
     },
     [theme.breakpoints.only('lg')]: {
-      paddingLeft: 340,
-      paddingRight: 340
+      paddingLeft: 0,
+      paddingRight: 0
     },
     [theme.breakpoints.only('xl')]: {
-      paddingLeft: 600,
-      paddingRight: 600
+      paddingLeft: 0,
+      paddingRight: 0
     }
   },
   content: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Main = props => {
+const MainForStylingScreen = props => {
   const { children } = props;
 
   const classes = useStyles();
@@ -65,8 +65,8 @@ const Main = props => {
   );
 };
 
-Main.propTypes = {
+MainForStylingScreen.propTypes = {
   children: PropTypes.node
 };
 
-export default Main;
+export default MainForStylingScreen;

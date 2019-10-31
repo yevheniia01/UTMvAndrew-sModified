@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
     [theme.breakpoints.up('sm')]: {
       paddingTop: 70,
+      padding: 0,
     }
   },
   shiftContent: {
@@ -41,7 +42,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Main = props => {
+const Main2 = props => {
   const { children } = props;
 
   const classes = useStyles();
@@ -65,8 +66,8 @@ const Main = props => {
   );
 };
 
-Main.propTypes = {
+Main2.propTypes = {
   children: PropTypes.node
 };
 
-export default Main;
+export default Main2;
