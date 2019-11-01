@@ -179,41 +179,118 @@ export default function LeftSideScreen() {
                    <Grid xs={12}>
                        <Typography variant="h6" className={classes.menuSubHeader}>Input Options</Typography>
                    </Grid>
-                   <Grid container spacing={12}>
-                       <Button className={classes.inputOptionBtn}>
-                       <form className={classes.container} noValidate autoComplete="off">
-                           <div>
-                           <Typography variant="h6" style={{textAlign: 'left',}}>Label</Typography>
-                        <TextField
-                            id="outlined-basic"
-                            className={classes.textField}
-                            style={{width: '8rem', padding: '0'}}
-                            label=""
-                            margin="normal"
-                            variant="outlined"
-                        />
-                        
-                        </div>
-                        <Typography variant="h6" style={{textAlign: 'center',}}>(default) rounded </Typography>
-                        </form>
-                        
-                        </Button>
-                        <Button className={classes.inputOptionBtn}>
-                        <form className={classes.container} noValidate autoComplete="off">
-                            <div>
-                            <Typography variant="h6" style={{textAlign: 'left',}}>Label</Typography>
-                       <TextField
-                            id="standard-basic"
-                            className={classes.textField}
-                            style={{width: '8rem'}}
-                            label=""
-                            margin="normal"
-                        />
-                        </div>
-                        <Typography variant="h6" style={{textAlign: 'center',}}>Linear </Typography>
-                        </form>
-                        </Button>
-                   </Grid>
+                   
+                   <Grid
+                          container
+                          direction="row"
+                          spacing={1}
+                        >
+                          <Grid item xs={6}>
+                            <Button
+                              style={{
+                                border: '1px solid darkgray',
+                                borderRadius: 5,
+                                padding: '1rem',
+                                width: '100%',
+                                textTransform: 'none'
+                              }}
+                            >
+                              <Grid
+                                container
+                                direction="column"
+                              >
+                                <Grid item>
+                                  <Typography
+                                    style={{
+                                      paddingLeft: 10,
+                                      textAlign: 'left'
+                                    }}
+                                  >
+                                    Label
+                                  </Typography>
+                                </Grid>
+                                <Grid
+                                  item
+                                  style={{
+                                    padding: '0 12px'
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      backgroundColor: 'white',
+                                      border: '1px solid darkgray',
+                                      borderRadius: 3,
+                                      font: '-moz-field',
+                                      font: '-webkit-small-control',
+                                      marginTop: 5,
+                                      padding: '2px 3px',
+                                      height: 30
+                                    }}
+                                  ></div>
+                                </Grid>
+                                <Grid item>
+                                  <Typography
+                                    style={{
+                                      marginTop: 5
+                                    }}
+                                  >
+                                    Default
+                                  </Typography>
+                                </Grid>
+                              </Grid>
+                            </Button>
+                          </Grid>
+                          <Grid item xs={6}>
+                          <Button
+                              style={{
+                                border: '1px solid darkgray',
+                                borderRadius: 5,
+                                padding: '1rem',
+                                width: '100%',
+                                textTransform: 'none'
+                              }}
+                            >
+                              <Grid
+                                container
+                                direction="column"
+                              >
+                                <Grid item>
+                                  <Typography
+                                    style={{
+                                      paddingLeft: 10,
+                                      textAlign: 'left'
+                                    }}
+                                  >
+                                    Label
+                                  </Typography>
+                                </Grid>
+                                <Grid
+                                  item
+                                  style={{
+                                    padding: '0 16px'
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: '100%',
+                                      borderBottom: '1px solid black',
+                                      marginTop: 40
+                                    }}
+                                  ></div>
+                                </Grid>
+                                <Grid item>
+                                  <Typography
+                                    style={{
+                                      marginTop: 5
+                                    }}
+                                  >
+                                    Linear
+                                  </Typography>
+                                </Grid>
+                              </Grid>
+                            </Button>
+                          </Grid>
+                        </Grid>
                    
                </Paper>
            
